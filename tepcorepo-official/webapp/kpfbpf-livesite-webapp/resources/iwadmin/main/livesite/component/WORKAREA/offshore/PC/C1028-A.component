@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component ID="1440947987930" Version="3.1.1.0" PageID="0" TemplateComponentID="0" CanBeActive="true" Checksum="20affa723727f97ef73c00219f5a70ad76305033">
+  <Description></Description>
+  <SelectedSkin>Default</SelectedSkin>
+  <DisplayName></DisplayName>
+  <Name></Name>
+  <IsMobileComponent>false</IsMobileComponent>
+  <BaseComponent Version="0"><![CDATA[//kpfbpf-team01/iwadmin/main/livesite/component/WORKAREA/offshore/PC/C1028-A.component]]></BaseComponent>
+  <ContainerProperties ID="0" locked="false">
+    <FixedLayoutArea ID="" index="0"/>
+    <CacheTime>-1</CacheTime>
+    <BGColor></BGColor>
+    <Width>200</Width>
+    <WidthPercent>0.0</WidthPercent>
+    <Height>200</Height>
+    <WidthType>absolute</WidthType>
+    <HeightType>absolute</HeightType>
+    <Top>10</Top>
+    <Left>10</Left>
+    <ZIndex>0</ZIndex>
+    <RenderInRuntime>true</RenderInRuntime>
+    <JavascriptCallback/>
+  </ContainerProperties>
+  <InternalProperties/>
+  <Locks>
+    <ContainerProperties locked="false" Changed="false"/>
+    <Properties locked="false" Changed="false"/>
+    <Data locked="false" Changed="false"/>
+  </Locks>
+  <Segments>
+    <Segment ID="0">
+      <Properties ComponentID="1440947987930"/>
+      <Data>
+        <Datum ID="D01" Type="DCR" Name="withdraw-formal">
+          <DCR Category="C1028" Type="C1028-A">templatedata/C1028/C1028-A/data/en/C1028-A</DCR>
+        </Datum>
+      </Data>
+    </Segment>
+  </Segments>
+  <Stylesheet Default="true" PageType="" RequiredPageLayout="" ContentType="" RenderingEngine="xsl">
+    <Name>Default</Name>
+    <XSL>&lt;!DOCTYPE html-entities SYSTEM "http://www.interwoven.com/livesite/xsl/xsl-html.dtd"&gt;
+&lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
+  &lt;!-- Skin: Default XSL --&gt;
+
+  &lt;xsl:include href="http://www.interwoven.com/livesite/xsl/HTMLTemplates.xsl"/&gt;
+  &lt;xsl:include href="http://www.interwoven.com/livesite/xsl/StringTemplates.xsl"/&gt;
+  &lt;xsl:template match="/"&gt;
+   &lt;div class="p-contract__block"&gt;
+
+        &lt;form&gt;
+        &lt;section class="pb50"&gt;
+          &lt;h2 class="c-hdg__section"&gt;退会について&lt;/h2&gt;
+          &lt;p class="mb35"&gt;&lt;b&gt;退会理由&lt;span class="ml20"&gt;いずれか一つを必ずお選びください。&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+          &lt;ul class="c-list--col2 pb40 pl35"&gt;
+		  &lt;xsl:for-each select="//withdrawreasonselect/chkbox"&gt;
+		  
+            &lt;li&gt;
+			
+				&lt;input type="checkbox"&gt;
+					&lt;xsl:attribute name="id"&gt;&lt;xsl:value-of select="id"/&gt;&lt;/xsl:attribute&gt;
+				&lt;/input&gt;
+				&lt;label class="line-break"&gt;
+				&lt;xsl:attribute name="for"&gt;&lt;xsl:value-of select="id"/&gt;&lt;/xsl:attribute&gt;
+				&lt;xsl:value-of select="label" disable-output-escaping="yes"/&gt;&lt;/label&gt;
+              &lt;/li&gt;
+			&lt;/xsl:for-each&gt;
+			
+          &lt;/ul&gt;
+
+          &lt;div class="mt15 prl35"&gt;
+            &lt;textarea name="" placeholder="該当する退会理由がない場合はご入力ください。" maxlength="100"&gt;&lt;/textarea&gt;
+          &lt;/div&gt;
+
+        &lt;/section&gt;
+
+        &lt;section class="pb25"&gt;
+          &lt;h2 class="c-hdg__section"&gt;ご注意事項&lt;/h2&gt;
+          &lt;div class="c-frame__dash-border is-bottom pb25 mb15"&gt;
+            &lt;p class="pl35"&gt;
+			&lt;xsl:value-of select="//noteselect/label1" disable-output-escaping="yes"/&gt;&lt;/p&gt;
+          &lt;/div&gt;
+
+           &lt;ul class="pl35"&gt;
+            &lt;li&gt;
+              &lt;input type="checkbox"&gt;
+			  &lt;xsl:attribute name="id"&gt;&lt;xsl:value-of select="//noteselect/chkbox1/id"/&gt;&lt;/xsl:attribute&gt;
+			  &lt;/input&gt;
+			  &lt;label class="line-break"&gt;&lt;xsl:attribute name="for"&gt;&lt;xsl:value-of select="//noteselect/chkbox1/id"/&gt;&lt;/xsl:attribute&gt;
+			  親IDが退会すると、子IDも自動的に削除されます。&lt;br/&gt;(くらしのプラットフォームをご利用いただけなくなります。)&lt;/label&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+               &lt;input type="checkbox"&gt;
+			  &lt;xsl:attribute name="id"&gt;&lt;xsl:value-of select="//noteselect/chkbox2/id"/&gt;&lt;/xsl:attribute&gt;
+			  &lt;/input&gt;
+			  
+			  &lt;label&gt;&lt;xsl:attribute name="for"&gt;&lt;xsl:value-of select="//noteselect/chkbox2/id"/&gt;&lt;/xsl:attribute&gt;
+			  ポイントがすべて消滅致します。&lt;/label&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;input type="checkbox"&gt;
+			  &lt;xsl:attribute name="id"&gt;&lt;xsl:value-of select="//noteselect/chkbox3/id"/&gt;&lt;/xsl:attribute&gt;
+			  &lt;/input&gt;
+			  
+			  &lt;label&gt;&lt;xsl:attribute name="for"&gt;&lt;xsl:value-of select="//noteselect/chkbox2/id"/&gt;&lt;/xsl:attribute&gt;
+			  &lt;xsl:value-of select="//noteselect/label2" disable-output-escaping="yes"/&gt;&lt;/label&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+          &lt;p class="pl35 pt5"&gt;&lt;small&gt;&lt;xsl:value-of select="//noteselect/label3"/&gt;&lt;/small&gt;&lt;/p&gt;
+        &lt;/section&gt;
+
+
+        &lt;div class="c-frame__dash-border is-top pt25 c-grid u-ta--c"&gt;
+          &lt;a class="c-btn c-btn--secondary is-confirm" href="/"&gt;&lt;em&gt;戻る&lt;/em&gt;&lt;/a&gt;
+          &lt;a class="c-btn c-btn--primary is-confirm" href="/"&gt;&lt;em&gt;次へ&lt;/em&gt;&lt;/a&gt;
+        &lt;/div&gt;
+
+
+
+        &lt;/form&gt;
+
+      &lt;/div&gt;
+  &lt;/xsl:template&gt;
+&lt;/xsl:stylesheet&gt;</XSL>
+  </Stylesheet>
+</Component>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component ID="1440947986913" Version="3.1.1.0" PageID="0" TemplateComponentID="0" CanBeActive="true" Checksum="2c6d195dd3b4aa3ea03141ff3589d2601de930c5">
+  <Description></Description>
+  <SelectedSkin>Default</SelectedSkin>
+  <DisplayName></DisplayName>
+  <Name></Name>
+  <IsMobileComponent>false</IsMobileComponent>
+  <BaseComponent Version="0"><![CDATA[//kpfbpf-team01/iwadmin/main/livesite/component/WORKAREA/offshore/PC/C1030-B.component]]></BaseComponent>
+  <ContainerProperties ID="0" locked="false">
+    <FixedLayoutArea ID="" index="0"/>
+    <CacheTime>0</CacheTime>
+    <BGColor></BGColor>
+    <Width>200</Width>
+    <WidthPercent>0.0</WidthPercent>
+    <Height>200</Height>
+    <WidthType>absolute</WidthType>
+    <HeightType>absolute</HeightType>
+    <Top>10</Top>
+    <Left>10</Left>
+    <ZIndex>0</ZIndex>
+    <RenderInRuntime>true</RenderInRuntime>
+    <JavascriptCallback/>
+  </ContainerProperties>
+  <InternalProperties/>
+  <Locks>
+    <ContainerProperties locked="false" Changed="false"/>
+    <Properties locked="false" Changed="false"/>
+    <Data locked="false" Changed="false"/>
+  </Locks>
+  <Segments>
+    <Segment ID="0">
+      <Properties ComponentID="1440947986913"/>
+      <Data>
+        <Datum ID="D01" Type="PageLink" Name="info_entry">$PAGE_LINK[]</Datum>
+        <Datum ID="D02" Type="PageLink" Name="info_complete">$PAGE_LINK[]</Datum>
+      </Data>
+    </Segment>
+  </Segments>
+  <Stylesheet Default="true" PageType="" RequiredPageLayout="" ContentType="" RenderingEngine="xsl">
+    <Name>Default</Name>
+    <XSL>&lt;!DOCTYPE html-entities SYSTEM "http://www.interwoven.com/livesite/xsl/xsl-html.dtd"&gt;
+&lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
+  &lt;!-- Skin: Default XSL --&gt;
+
+  &lt;xsl:include href="http://www.interwoven.com/livesite/xsl/HTMLTemplates.xsl"/&gt;
+  &lt;xsl:include href="http://www.interwoven.com/livesite/xsl/StringTemplates.xsl"/&gt;
+  &lt;xsl:template match="/"&gt;
+
+	&lt;div class="contents__main"&gt;
+	  &lt;div class="p-contract__block"&gt;
+
+		&lt;section&gt;
+		  &lt;h2 class="c-hdg__section"&gt;子IDの情報&lt;/h2&gt;
+
+
+		  &lt;div class="c-table-bg--gray"&gt;
+			&lt;table class="c-table--form is-simple"&gt;
+			  &lt;tr&gt;
+				&lt;th&gt;
+				  &lt;span&gt;子のログインID&lt;/span&gt;
+				&lt;/th&gt;
+				&lt;td&gt;
+				  &lt;span&gt;AAAAA&lt;/span&gt;
+				&lt;/td&gt;
+			  &lt;/tr&gt;
+			  &lt;tr&gt;
+				&lt;th&gt;
+				  &lt;span&gt;メールアドレス&lt;/span&gt;
+				&lt;/th&gt;
+				&lt;td&gt;
+				  &lt;span&gt;sample@mail.com&lt;/span&gt;
+				&lt;/td&gt;
+			  &lt;/tr&gt;
+			  &lt;tr&gt;
+				&lt;th&gt;
+				  &lt;span&gt;メールアドレス&lt;/span&gt;
+				&lt;/th&gt;
+				&lt;td&gt;
+				  &lt;span&gt;sample@mail.com&lt;/span&gt;
+				&lt;/td&gt;
+			  &lt;/tr&gt;
+			  &lt;tr&gt;
+				&lt;th&gt;
+				  &lt;span&gt;パスワード&lt;/span&gt;
+				&lt;/th&gt;
+				&lt;td&gt;
+				  &lt;span&gt;＊＊＊＊＊＊＊＊＊＊&lt;/span&gt;
+				&lt;/td&gt;
+			  &lt;/tr&gt;
+			  &lt;tr&gt;
+				&lt;th&gt;
+				  &lt;span&gt;パスワード&lt;/span&gt;
+				&lt;/th&gt;
+				&lt;td&gt;
+				  &lt;span&gt;＊＊＊＊＊＊＊＊＊＊&lt;/span&gt;
+				&lt;/td&gt;
+			  &lt;/tr&gt;
+			  &lt;tr&gt;
+				&lt;th&gt;
+				  &lt;span&gt;お名前 (漢字)&lt;/span&gt;
+				&lt;/th&gt;
+				&lt;td&gt;
+				  &lt;span&gt;東電　太郎&lt;/span&gt;
+				&lt;/td&gt;
+			  &lt;/tr&gt;
+			  &lt;tr&gt;
+				&lt;th&gt;
+				  &lt;span&gt;お名前（カナ）&lt;/span&gt;
+				&lt;/th&gt;
+				&lt;td&gt;
+				  &lt;span&gt;トウデン タロウ&lt;/span&gt;
+				&lt;/td&gt;
+			  &lt;/tr&gt;
+			  &lt;tr&gt;
+				&lt;th&gt;
+				  &lt;span&gt;生年月日&lt;/span&gt;
+				&lt;/th&gt;
+				&lt;td&gt;
+				  &lt;span&gt;1990年&lt;/span&gt;
+				  &lt;span&gt;1月&lt;/span&gt;
+				  &lt;span&gt;1日&lt;/span&gt;
+				&lt;/td&gt;
+			  &lt;/tr&gt;
+			  &lt;tr&gt;
+				&lt;th&gt;
+				  &lt;span&gt;郵便番号&lt;/span&gt;
+				&lt;/th&gt;
+				&lt;td&gt;
+				  &lt;span&gt;1234567&lt;/span&gt;
+				&lt;/td&gt;
+			  &lt;/tr&gt;
+			  &lt;tr&gt;
+				&lt;th&gt;
+				  &lt;span&gt;都道府県&lt;/span&gt;
+				&lt;/th&gt;
+				&lt;td&gt;
+				  &lt;span&gt;東京都&lt;/span&gt;
+				&lt;/td&gt;
+			  &lt;/tr&gt;
+			  &lt;tr&gt;
+				&lt;th&gt;
+				  &lt;span&gt;市区町村・番地号数&lt;/span&gt;
+				&lt;/th&gt;
+				&lt;td&gt;
+				  &lt;span&gt;新宿区西新宿１丁目123-123&lt;/span&gt;
+				&lt;/td&gt;
+			  &lt;/tr&gt;
+			  &lt;tr&gt;
+				&lt;th&gt;建物名・棟番号/部屋番号&lt;/th&gt;
+				&lt;td&gt;
+				  &lt;span&gt;新宿中央ビル 123号室&lt;/span&gt;
+				&lt;/td&gt;
+			  &lt;/tr&gt;
+			  &lt;tr&gt;
+				&lt;th&gt;性別&lt;/th&gt;
+				&lt;td&gt;
+				  &lt;span&gt;男性&lt;/span&gt;
+				&lt;/td&gt;
+			  &lt;/tr&gt;
+			&lt;/table&gt;
+		  &lt;/div&gt;
+
+		  &lt;div class="u-ta--c c-frame__dash-border is-top mt50 pt20 c-grid"&gt;
+			&lt;a href="{/Properties/Data/Datum[@Name='info_entry']}" class="c-btn c-btn--secondary is-confirm"&gt;&lt;em&gt;戻る&lt;/em&gt;&lt;/a&gt;
+			&lt;a href="{/Properties/Data/Datum[@Name='info_complete']}" class="c-btn c-btn--primary is-confirm"&gt;&lt;em&gt;登録する&lt;/em&gt;&lt;/a&gt;
+		  &lt;/div&gt;
+		&lt;/section&gt;
+	 
+	  &lt;/div&gt;
+	&lt;/div&gt;
+
+  &lt;/xsl:template&gt;
+&lt;/xsl:stylesheet&gt;</XSL>
+  </Stylesheet>
+</Component>

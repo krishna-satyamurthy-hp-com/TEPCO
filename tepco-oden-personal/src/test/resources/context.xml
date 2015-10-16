@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+   <bean id="springServiceTest" class="com.hp.proserv.mo.SpringServiceTest" >
+      <property name="springVersion" value="3.2.3.RELEASE" />
+   </bean>
+   
+   <bean id="propertyPlaceholderConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<value>classpath:lscs.properties</value>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="lscsFactory" class="com.interwoven.wcm.lscs.Factory" />
+	
+	<bean id="lscsClientFactory"
+		class="com.hp.proserv.mo.LSCSClientFactory">
+		<property name="lscsFactory" ref="lscsFactory" />
+		<property name="lscsConnectionProperties">
+			<props>
+				<prop key="lscs.transport">${lscs.transport}</prop>
+				<prop key="lscs.host">${lscs.host}</prop>
+				<prop key="lscs.port">${lscs.port}</prop>
+				<prop key="lscs.context.path">${lscs.context.path}</prop>
+				<prop key="lscs.version">${lscs.version}</prop>
+				<prop key="lscs.ssl.verify_hostname">${lscs.ssl.verify_hostname}</prop>
+			</props>
+		</property>
+	</bean>
+
+</beans>

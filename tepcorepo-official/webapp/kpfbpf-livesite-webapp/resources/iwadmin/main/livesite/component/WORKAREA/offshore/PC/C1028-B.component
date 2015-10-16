@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component ID="1440947986770" Version="3.1.1.0" PageID="0" TemplateComponentID="0" CanBeActive="true" Checksum="09ac029b53378d25de3ef2387023af6b8b4d7599">
+  <Description></Description>
+  <SelectedSkin>Default</SelectedSkin>
+  <DisplayName></DisplayName>
+  <Name></Name>
+  <IsMobileComponent>false</IsMobileComponent>
+  <BaseComponent Version="0"><![CDATA[//kpfbpf-team01/iwadmin/main/livesite/component/WORKAREA/offshore/PC/C1028-B.component]]></BaseComponent>
+  <ContainerProperties ID="0" locked="false">
+    <FixedLayoutArea ID="" index="0"/>
+    <CacheTime>-1</CacheTime>
+    <BGColor></BGColor>
+    <Width>200</Width>
+    <WidthPercent>0.0</WidthPercent>
+    <Height>200</Height>
+    <WidthType>absolute</WidthType>
+    <HeightType>absolute</HeightType>
+    <Top>10</Top>
+    <Left>10</Left>
+    <ZIndex>0</ZIndex>
+    <RenderInRuntime>true</RenderInRuntime>
+    <JavascriptCallback/>
+  </ContainerProperties>
+  <InternalProperties/>
+  <Locks>
+    <ContainerProperties locked="false" Changed="false"/>
+    <Properties locked="false" Changed="false"/>
+    <Data locked="false" Changed="false"/>
+  </Locks>
+  <Segments>
+    <Segment ID="0">
+      <Properties ComponentID="1440947986770"/>
+      <Data>
+        <Datum ID="D01" Type="PageLink" Name="pageLink">$PAGE_LINK[]</Datum>
+        <Datum ID="D02" Type="PageLink" Name="pageLinkSet1B">$PAGE_LINK[]</Datum>
+        <External>
+          <Parameters>
+            <Datum ID="EX03" Type="String" Name="api-request">47_get-L</Datum>
+          </Parameters>
+          <Object Scope="local">jp.co.tepco.kpfbpf.livesite.sample.webapp.ApiExternal</Object>
+          <Method>execute</Method>
+        </External>
+      </Data>
+    </Segment>
+  </Segments>
+  <Stylesheet Default="true" PageType="" RequiredPageLayout="" ContentType="" RenderingEngine="xsl">
+    <Name>Default</Name>
+    <XSL>&lt;!DOCTYPE html-entities SYSTEM "http://www.interwoven.com/livesite/xsl/xsl-html.dtd"&gt;
+&lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
+  &lt;!-- Skin: Default XSL --&gt;
+
+  &lt;xsl:include href="http://www.interwoven.com/livesite/xsl/HTMLTemplates.xsl"/&gt;
+  &lt;xsl:include href="http://www.interwoven.com/livesite/xsl/StringTemplates.xsl"/&gt;
+  &lt;xsl:template match="/"&gt;
+&lt;div class="p-contract__block"&gt;
+
+
+        &lt;section class="pb50"&gt;
+          &lt;h2 class="c-hdg__section"&gt;退会について&lt;/h2&gt;
+
+          &lt;dl class="c-grid c-grid--gutter-10 mt40"&gt;
+            &lt;dt class="c-grid__item col--1of4 u-ta--r pt15 pr15"&gt;&lt;b&gt;退会理由&lt;/b&gt;&lt;/dt&gt;
+            &lt;dd class="c-grid__item col--3of4"&gt;
+              &lt;div class="c-frame--gray ptb20 pr25 pl25"&gt;
+                &lt;ul class="c-list--bullet-circle"&gt;
+                  &lt;li&gt;役に立つコンテンツ、おもしろいコンテンツがない&lt;/li&gt;
+                  &lt;li&gt;操作方法が分かりにくい&lt;/li&gt;
+                  &lt;li&gt;説明やデザインが分かりにくい&lt;/li&gt;
+                &lt;/ul&gt;
+                &lt;div class="p-set-other-comments"&gt;
+                  &lt;p&gt;その他自由記入欄コメント（最大100字）サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト&lt;/p&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/dd&gt;
+          &lt;/dl&gt;
+
+        &lt;/section&gt;
+
+        &lt;section class="pb25"&gt;
+          &lt;h2 class="c-hdg__section"&gt;ご注意事項&lt;/h2&gt;
+          &lt;div class="c-frame__dash-border is-bottom pb25 mb15"&gt;
+            &lt;p class="pl35"&gt;必ず注意事項をお読みのうえ、お手続きください。&lt;/p&gt;
+          &lt;/div&gt;
+
+          &lt;ul class="c-list--bullet-circle pl35"&gt;
+            &lt;li&gt;
+              &lt;span&gt;親IDが退会すると、子IDも自動的に削除されます。&lt;br/&gt;(くらしのプラットフォームをご利用いただけなくなります。)&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;span&gt;ポイントがすべて消滅致します。&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;span&gt;一度退会すると復活は出来ません。&lt;/span&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+          &lt;p class="pl35 pt5"&gt;&lt;small&gt;※このお手続きは電気契約の解約ではありません。電気契約の解約は、契約内容の廃止よりお手続きください。&lt;/small&gt;&lt;/p&gt;
+        &lt;/section&gt;
+
+        &lt;div class="u-ta--c c-frame__dash-border is-top pt25 c-grid"&gt;
+          &lt;a class="c-btn c-btn--secondary is-confirm" href="{/Properties/Data/Datum[@Name='pageLink']}"&gt;&lt;em&gt;戻る&lt;/em&gt;&lt;/a&gt;
+          &lt;a class="c-btn c-btn--primary is-confirm" href="{/Properties/Data/Datum[@Name='pageLinkSet1B']}"&gt;&lt;em&gt;退会する&lt;/em&gt;&lt;/a&gt;
+        &lt;/div&gt;
+
+      &lt;/div&gt;
+  &lt;/xsl:template&gt;
+&lt;/xsl:stylesheet&gt;</XSL>
+  </Stylesheet>
+</Component>

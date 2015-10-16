@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component ID="1441696966522" Version="3.1.1.0" PageID="0" TemplateComponentID="0" CanBeActive="true" Checksum="59c09d41e1e04b005287aecf58d2c3586e4fd620">
+  <Description></Description>
+  <SelectedSkin>Default</SelectedSkin>
+  <DisplayName></DisplayName>
+  <Name></Name>
+  <IsMobileComponent>false</IsMobileComponent>
+  <BaseComponent Version="0"><![CDATA[//kpfbpf-team01/iwadmin/main/livesite/component/WORKAREA/offshore/PC/C1082.component]]></BaseComponent>
+  <ContainerProperties ID="0" locked="false">
+    <FixedLayoutArea ID="" index="0"/>
+    <CacheTime>0</CacheTime>
+    <BGColor></BGColor>
+    <Width>200</Width>
+    <WidthPercent>0.0</WidthPercent>
+    <Height>200</Height>
+    <WidthType>absolute</WidthType>
+    <HeightType>absolute</HeightType>
+    <Top>10</Top>
+    <Left>10</Left>
+    <ZIndex>0</ZIndex>
+    <RenderInRuntime>true</RenderInRuntime>
+    <JavascriptCallback/>
+  </ContainerProperties>
+  <InternalProperties/>
+  <Locks>
+    <ContainerProperties locked="false" Changed="false"/>
+    <Properties locked="false" Changed="false"/>
+    <Data locked="false" Changed="false"/>
+  </Locks>
+  <Segments>
+    <Segment ID="0">
+      <Properties ComponentID="1441696966522"/>
+      <Data>
+        <Datum ID="D01" Type="DCR" Name="sim-content">
+          <DCR Category="life_sim" Type="index">templatedata/life_sim/index/data/index</DCR>
+        </Datum>
+        <Datum ID="D04" Type="DCR" Name="sim-car-content">
+          <DCR Category="life_sim" Type="index-a">templatedata/life_sim/index-a/data/index-a</DCR>
+        </Datum>
+        <Datum ID="D02" Type="PageLink" Name="tab-2"><![CDATA[$PAGE_LINK[PC/life/sim/index]]]></Datum>
+        <Datum ID="D03" Type="PageLink" Name="tab-1"><![CDATA[$PAGE_LINK[PC/life/sim/index-a]]]></Datum>
+      </Data>
+    </Segment>
+  </Segments>
+  <Stylesheet Default="true" PageType="" RequiredPageLayout="" ContentType="" RenderingEngine="xsl">
+    <Name>Default</Name>
+    <XSL>&lt;!DOCTYPE html-entities SYSTEM "http://www.interwoven.com/livesite/xsl/xsl-html.dtd"&gt;
+&lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
+  &lt;!-- Skin: Default XSL --&gt;
+
+  &lt;xsl:include href="http://www.interwoven.com/livesite/xsl/HTMLTemplates.xsl"/&gt;
+  &lt;xsl:include href="http://www.interwoven.com/livesite/xsl/StringTemplates.xsl"/&gt;
+  &lt;xsl:include href="http://www.interwoven.com/custom/iw/C1082/C1082.xsl"/&gt;
+  &lt;xsl:template match="/"&gt;
+   &lt;xsl:call-template name="C1082" /&gt;
+  &lt;/xsl:template&gt;
+&lt;/xsl:stylesheet&gt;</XSL>
+  </Stylesheet>
+  <Stylesheet Default="false" PageType="html5" RequiredPageLayout="" ContentType="" RenderingEngine="xsl">
+    <Name>Car</Name>
+    <XSL>&lt;!DOCTYPE html-entities SYSTEM "http://www.interwoven.com/livesite/xsl/xsl-html.dtd"&gt;
+&lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
+  &lt;!-- Skin: Car --&gt;
+  
+  &lt;xsl:include href="http://www.interwoven.com/custom/iw/C1082/C1082.xsl"/&gt;
+  &lt;xsl:template match="/"&gt;
+    &lt;xsl:call-template  name="C1082-Car" /&gt;
+  &lt;/xsl:template&gt;
+&lt;/xsl:stylesheet&gt;</XSL>
+  </Stylesheet>
+</Component>
